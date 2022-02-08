@@ -1,0 +1,115 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial;
+    margin: 1.5rem;
+}
+
+img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(0,0,85,0.38);
+    padding: 1.5rem;
+    width: 35%;
+    border-radius: 3rem;
+}
+
+.top-right-float{
+    float: right;
+    text-align: right;
+    margin: 1.5rem 1.5rem 0 0;
+}
+
+.document-name {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.larger {
+    font-size: larger;
+}
+
+p {
+    margin: 0;
+}
+
+.grid-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.report-info-wrapper-left {
+    display: grid;
+    margin: 5rem 0 0 0;
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
+    grid-template-columns: repeat(2, max-content);
+}
+
+.vertical-line {
+    margin-top: 5rem;
+    border-right: .1rem solid #959595;
+    height: 10rem;
+}
+
+.report-info-wrapper-left div:nth-child(odd) {
+    text-align: right;
+    font-weight: bolder;
+}
+
+.report-info-wrapper-right {
+    display: grid;
+    margin: 5rem 0 0 0;
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
+    grid-template-columns: repeat(2, fit-content(100%));
+    grid-auto-rows: 5rem;
+    max-width: 50%;
+}
+
+.report-info-wrapper-right div:nth-child(odd) {
+    text-align: right;
+    font-weight: bolder;
+}
+
+.topics-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(100%));
+    grid-auto-columns: 1fr;
+}
+
+.section-title {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: x-large;
+    text-shadow: .15rem .15rem rgba(143, 143, 245, 0.96);
+}
+
+.bubble-light {
+    background: rgb(193, 193, 217);
+    margin: 1rem 1rem 0 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: .2rem .3rem .3rem #030354;
+}
+
+.bubble-dark {
+    background: rgb(145, 145, 161);
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: .2rem .3rem .3rem #030354;
+}
+
+.buffer {
+    margin: 3rem 0 3rem 0;
+}
